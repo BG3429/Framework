@@ -1,0 +1,31 @@
+<div class="ui secondary  menu">
+    <a href="RandomNumberGame/index" class="active item">
+    Home
+    </a>
+    {% block menu %}
+    {% endblock %}
+</div>
+{% block header %}
+    <h1 class="ui header">
+        <i class="search icon"></i>
+        Random Number Game
+    </h1>
+    <div class="ui message">
+        <div class="header">
+            Random number game
+        </div>
+        <p>Trouvez le nombre aléatoire.</p>
+    </div>
+{% endblock %}
+
+{% block body %}
+{% endblock %}
+
+<div class="ui inverted segment">
+{% block footer%}
+    <a href="RandomNumberGame/termine" class="ui inverted red button">
+        <i class="icon stop"></i>
+        Arrêter le jeu
+    </a>
+{% endblock %}
+</div>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="ui icon {{type}} message">
+	<i class="ui {{icon}} icon"></i>
+	<div class="content">
+	<p>Vous avez proposer <b>{{reponse}}</b></p>
+	<p>{{message}}
+	</div>
+</div>
+{% endblock %}
+
+{% block footer%}
+    {{ parent() }}
+    {% if not win %}
+    	<a class="ui teal button" href="RandomNumberGame/propose">
+    		Faire une autre proposition
+    	</a>
+    {% endif %}
+{% endblock %}

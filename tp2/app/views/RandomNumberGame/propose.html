@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form method="POST" action="RandomNumberGame/soumet">
+<div class="ui action input">
+  <input placeholder="Nombre..." type="number" name="nombre" min="1" max="10">
+  <button class="ui black button">Proposer</button>
+</div>
+</form>
+{% endblock %}
